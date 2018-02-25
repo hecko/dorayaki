@@ -3,25 +3,25 @@
 from pprint import pprint
 
 # zakladna definicia
-muka = 75
-cukor = 30
-vajce = 1
-prasok = 4
-mlieko = 90
-kusy = 7
+flour = 75
+sugar = 30
+egg = 1
+bp = 4
+milk = 90
+pieces = 7
 
 
-def kolko(vajec):
+def measures(eggs):
     out = {}
-    out['vajec_kus'] = vajec
-    out['muka_g'] = muka * vajec
-    out['cukor_g'] = cukor * vajec
-    out['prasok_do_peciva_g'] = prasok * vajec
-    out['mlieko_g'] = mlieko * vajec
+    out['eggs_no'] = eggs
+    out['flour_g'] = flour * eggs
+    out['sugar_g'] = sugar * eggs
+    out['baking_powder_g'] = bp * eggs
+    out['milk_g'] = milk * eggs
     return out
 
-for vajec in range(1, 4):
-    print("Pri {} vajciach pouzi:".format(vajec))
-    pprint(kolko(vajec))
-    print("Predpokladany pocet porcii pri 0.04l odmerke: {}".format(vajec * kusy))
+for eggs in range(1, 4):
+    print("Using {} eggs means using:".format(eggs))
+    pprint(measures(eggs))
+    print("Estimated number of cakes when using 0.04l measure: {}".format(eggs * pieces))
     print("=-=-=-=-=-=-=-=-")
