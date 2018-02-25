@@ -10,7 +10,6 @@ prasok = 4
 mlieko = 90
 kusy = 7
 
-vajec = 3
 
 def kolko(vajec):
     out = {}
@@ -21,6 +20,8 @@ def kolko(vajec):
     out['mlieko_g'] = mlieko * vajec
     return out
 
-print("Pri {} vajciach pouzi:".format(vajec))
-pprint(kolko(vajec))
-print("Predpokladany pocet porcii pri 0.04l odmerke: {}".format(vajec * kusy))
+for vajec in range(1, 4):
+    print("Pri {} vajciach pouzi:".format(vajec))
+    pprint(kolko(vajec))
+    print("Predpokladany pocet porcii pri 0.04l odmerke: {}".format(vajec * kusy))
+    print("=-=-=-=-=-=-=-=-")
