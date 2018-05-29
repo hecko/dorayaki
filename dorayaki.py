@@ -13,15 +13,18 @@ pieces = 7
 
 def measures(eggs):
     out = {}
-    out['eggs_no'] = eggs
-    out['flour_g'] = flour * eggs
-    out['sugar_g'] = sugar * eggs
-    out['baking_powder_g'] = bp * eggs
-    out['milk_g'] = milk * eggs
+    out["eggs_no"] = eggs
+    out["flour_g"] = flour * eggs
+    out["sugar_g"] = sugar * eggs
+    out["baking_powder_g"] = bp * eggs
+    out["milk_g"] = milk * eggs
     return out
+
 
 for eggs in range(1, 4):
     print("Using {} eggs means using:".format(eggs))
     pprint(measures(eggs))
-    print("Estimated number of cakes when using 0.04l measure: {}".format(eggs * pieces))
+    print(
+        "Estimated number of cakes when using 0.04l measure: {}".format(eggs * pieces)
+    )
     print("=-=-=-=-=-=-=-=-")
