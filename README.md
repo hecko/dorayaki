@@ -1,7 +1,7 @@
 # Dorayaki cakes recipe
 
-* All is in grams
-* All calculated based on how many eggs you want to use
+* All units in SI (grams)
+* All calculated qualtities based on how many eggs you want to use
 * Written in Python
 
 ## Cooking
