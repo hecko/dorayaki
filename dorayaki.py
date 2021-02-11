@@ -2,10 +2,9 @@
 
 from pprint import pprint
 
-# zakladna definicia
+# definitions
 flour = 75
 sugar = 30
-egg = 1
 bp = 4
 milk = 90
 pieces = 7
@@ -21,10 +20,13 @@ def measures(eggs):
     return out
 
 
-for eggs in range(1, 4):
-    print("Using {} eggs means using:".format(eggs))
-    pprint(measures(eggs))
-    print(
-        "Estimated number of cakes when using 0.04l measure: {}".format(eggs * pieces)
-    )
-    print("=-=-=-=-=-=-=-=-")
+if __name__ == "__main__":
+    for eggs in range(1, 4):
+        print("Using {} eggs (cca 50g is weight of the egg) means using:".format(eggs))
+        pprint(measures(eggs))
+        print(
+            "Estimated number of cakes when using 0.04l of batter per cake: {}".format(
+                eggs * pieces
+            )
+        )
+        print("=-=-=-=-=-=-=-=-")
